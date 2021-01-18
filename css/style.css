@@ -1,0 +1,169 @@
+body {
+    font: 100%/1.5 'Museo', san-serif;
+    margin: 0;
+}
+
+.page__card {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: 100% 100%;
+    /* width: 800px; */
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card__inner {
+    position: absolute;
+    background: #111a28;
+    border-radius: 10px;
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.82);
+    width: 686px;
+    height: 391px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+}
+
+.card__logotype {
+    padding: 25px 5px 0;
+}
+
+.card__brand {
+    height: 327px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -22px;
+}
+
+.card__img {
+    width: 329px;
+    height: 159px;
+}
+
+.card__about {
+    height: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 29px;
+    
+}
+
+.card__caption {
+    color: #e1e1e1;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 0;
+    margin: 11px 0;
+}
+
+.card__text {
+    opacity: 0.54;
+    color: #e1e1e1;
+    font-size: 14px;
+    line-height: 26px;
+    margin: -7px 0px;
+}
+
+.star-rating__wrap {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.star-rating__wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.star-rating__input {
+    float: right;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin: 0 13px 20px 0;
+    cursor: pointer;
+}
+
+.star-rating__input:before {
+    content: "\f005";
+    color: #999da4;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.star-rating__input:hover:before,
+.star-rating__input:hover~.star-rating__input:before {
+    content: "\f005";
+    color: #f7c00e;
+}
+
+.star-rating__input:checked:before,
+.star-rating__input:checked~.star-rating__input:before {
+    content: "\f005";
+    color: #FFB300 !important;
+}
+
+.star-rating {
+    margin-top: 23px;
+}
+
+.select {
+    display: inline-block;
+}
+
+select {
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: #111a28;
+    opacity: 0.26;
+    width: 69px;
+    height: 32px;
+    margin-top: 15px;
+    margin-right: -5px;
+    color: #e1e1e1;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    padding-left: 9px;
+    outline: none;
+    cursor: pointer;
+}
+
+.select--quantity {
+    letter-spacing: -2px;
+    margin-left: 5px;
+}
+
+.submit input {
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    background-color: #4c525a;
+    opacity: 0.26;
+    width: 184px;
+    height: 38px;
+    color: #e1e1e1;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.submit input:hover,
+select:hover {
+    opacity: .5;
+    border-color: aqua;
+}
